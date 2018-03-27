@@ -1,0 +1,15 @@
+{
+  "name": "node-samples",
+  "version": "1.0.0",
+  "description": "Tutoriels sur nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "author": "rpalvair",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.5"
+  }
+}
