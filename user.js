@@ -4,7 +4,12 @@ var User = function (firstName, lastName) {
     this.lastName = lastName;
 
     this.fullName = function () {
-        return this.firstName + '' + this.lastName;
+        if (!this.firstName) {
+            throw new TypeError("firstname is empty"); 
+        } if (!this.lastName) {
+            throw new TypeError("lastname is empty");
+        }
+        return this.firstName + ' ' + this.lastName;
     }
 };
 
