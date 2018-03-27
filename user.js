@@ -1,4 +1,4 @@
-var user = function (firstName, lastName) {
+var User = function (firstName, lastName) {
 
     this.firstName = firstName;
     this.lastName = lastName;
@@ -6,6 +6,6 @@ var user = function (firstName, lastName) {
     this.fullName = function () {
         return this.firstName + '' + this.lastName;
     }
-}
+};
 
-module.exports = user;
+module.exports = User;
